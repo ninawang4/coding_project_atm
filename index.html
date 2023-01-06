@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="index.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1 class="title">Welcome to Nina's ATM</h1>  
+    </main>
+    <form>
+      <label>Enter your PIN number:</label>
+      <input type="number" id="pin" name="pin">
+      <button onclick="submitPin(event)">Enter</button>
+    </form>
+    <div id="options" style="display:none">
+      <h3>
+      Your account balance is <div id="balance">None</div>
+      </h3>
+      <form>
+        <label>Withdrawal amount:</label>
+        <input type="number" id="withdrawAmt" name="withdrawAmt">
+        <button onclick="withdraw(event)">Enter</button><br><br>
+        <label>Deposit amount:</label>
+        <input type="number" id="depositAmt" name="depositAmt">
+        <button onclick="deposit(event)">Enter</button>
+      </form><br><br>
+      <form>
+        <button onclick="done(event)">Done with Session</button>
+      </form>
+    </div>
+    
+
+
+
+
+    
+    
+
+  </body>
+</html>
